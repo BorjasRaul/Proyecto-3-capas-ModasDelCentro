@@ -109,7 +109,7 @@
     <Content Include="Catalogos\Productos\ListarProductos.aspx" />
     <Content Include="Catalogos\Usuarios\Login.aspx" />
     <Content Include="Catalogos\Usuarios\RegistroUsuarios.aspx" />
-    <Content Include="Catalogos\Ventas\Venta.aspx" />
+    <Content Include="Catalogos\Ventas\Ventass.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -265,12 +265,12 @@
     <Compile Include="Catalogos\Usuarios\RegistroUsuarios.aspx.designer.cs">
       <DependentUpon>RegistroUsuarios.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Catalogos\Ventas\Venta.aspx.cs">
-      <DependentUpon>Venta.aspx</DependentUpon>
+    <Compile Include="Catalogos\Ventas\Ventass.aspx.cs">
+      <DependentUpon>Ventass.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Catalogos\Ventas\Venta.aspx.designer.cs">
-      <DependentUpon>Venta.aspx</DependentUpon>
+    <Compile Include="Catalogos\Ventas\Ventass.aspx.designer.cs">
+      <DependentUpon>Ventass.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>

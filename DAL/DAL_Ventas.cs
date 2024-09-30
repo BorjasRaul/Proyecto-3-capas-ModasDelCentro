@@ -17,17 +17,17 @@ namespace DAL
             int respuesta = 0;
             try
             {
-                respuesta = Metodos_Datos.execute_NonQuery("SP_Insert_Venta",
+                respuesta = Metodos_Datos.execute_scalar("SP_Insert_Venta",
                     "Total ", venta.Total,
                     "Empleado_ID ", venta.Empleado_ID,
-                    "Cliente_ID ", venta.Cliente_ID,
-                    "Status_ID ", venta.Status_ID,
-                    "Folio ", venta.Folio
+                    //"Cliente_ID ", venta.Cliente_ID,
+                    "Status_ID ", venta.Status_ID
+                    //"Folio ", venta.Folio
                     );
 
                 if (respuesta != 0)
                 {
-                    salida = "Venta resgistrado con exito";
+                    salida = respuesta.ToString();
                 }
                 else
                 {
@@ -79,8 +79,8 @@ namespace DAL
                    "Total ", venta.Total,
                     "Empleado_ID ", venta.Empleado_ID,
                     "Cliente_ID ", venta.Cliente_ID,
-                    "Status_ID ", venta.Status_ID,
-                    "Folio ", venta.Folio
+                    "Status_ID ", venta.Status_ID
+                    //"Folio ", venta.Folio
 
                      );
 

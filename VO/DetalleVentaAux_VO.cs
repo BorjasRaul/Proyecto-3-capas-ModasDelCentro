@@ -12,6 +12,7 @@ namespace VO
     [Serializable]
     public class DetalleVentaAux_VO
     {
+        private int _ID_Producto;
         private string _Codigo_Producto;
         private string _Modelo;
         private string _Marca;
@@ -22,7 +23,8 @@ namespace VO
         private double _PXC;
         private string _Descripcion;
 
-  public string Codigo_Producto { get => _Codigo_Producto; set => _Codigo_Producto = value; }
+        public int ID_Producto { get => _ID_Producto; set => _ID_Producto = value; }
+        public string Codigo_Producto { get => _Codigo_Producto; set => _Codigo_Producto = value; }
         public string Modelo { get => _Modelo; set => _Modelo = value; }
         public string Marca { get => _Marca; set => _Marca = value; }
         public string Talla { get => _Talla; set => _Talla = value; }
@@ -34,6 +36,7 @@ namespace VO
 
         public DetalleVentaAux_VO()
         {
+            ID_Producto = 0;
             Codigo_Producto = "";
             Modelo = "";
             Marca = "";

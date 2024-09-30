@@ -3,6 +3,7 @@ using Proyecto_3_capas_ModasDelCentro.Utilidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -39,11 +40,26 @@ namespace Proyecto_3_capas_ModasDelCentro.Catalogos.Usuarios
             else {
                 Session["Rol"] = usuarios_VO.Rol_ID;
                 Session["Usuario"]=usuarios_VO.Nombre_Usuario;
-                if (usuarios_VO.Rol_ID == 1) {
+                if (usuarios_VO.Rol_ID == 1)
+                {
+
+                    Session["ID_Usuario"] =  usuarios_VO.ID_Usuario;
+
+                    titulo = $"Bienvenido {usuarios_VO.Nombre_Usuario}";
+                    respuesta = "";
+                    tipo = "info";
+
+                 
+                    SweetAlert.sweet_Alert(titulo, salida, tipo, this.Page, GetType(), "~/../../../");
+                 //   Response.Redirect("~/");
+                }
+                else {
 
                     Response.Redirect("~/");
                 }
-               
+
+
+
             }
         }
     }

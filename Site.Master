@@ -49,16 +49,26 @@
                 </button>
                 <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                  
+
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Catalogos/Clientes/ListarClientes.aspx">Clientes</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Catalogos/Productos/ListarProductos.aspx">Productos</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Catalogos/Empleados/ListarEmpleados.aspx">Empleados</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Catalogos/Clientes/ListarClientes.aspx">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/ListarProductos">Acerca de</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Catalogos/Ventas/Ventass.aspx">Venta</a></li>
                     </ul>
-                    <ul class="navbar-nav flex-grow-1">
+                    <ul class="navbar-nav ">
 
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Catalogos/Usuarios/Login.aspx">Iniciar sesion</a></li>
+                        <li class="nav-item"><a class="nav-link" id="IniciarSesion" runat="server" href="~/Catalogos/Usuarios/Login.aspx">Iniciar sesion</a></li>
+                        <li>
+                            <h2>
+                                <label class="nav-item" id="UsuarioMaster" runat="server" style="margin-left:auto; color:aliceblue"></label>
+                            </h2>
+
+                        </li>
+                        <li>
+                            <h5>
+                                <a class="nav-link" id="CerrarSesion" runat="server" onserverclick="CerrarSesion_ServerClick" style="margin-left:auto">cerrar sesion</a>
+                            </h5>
+                        </li>
                     </ul>
                 </div>
             </div>

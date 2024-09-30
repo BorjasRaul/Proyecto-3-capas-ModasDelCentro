@@ -76,5 +76,19 @@ namespace Proyecto_3_capas_ModasDelCentro.Catalogos.Usuarios
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnGuardar;
+
+        /// <summary>
+        /// Propiedad Master.
+        /// </summary>
+        /// <remarks>
+        /// Propiedad generada automáticamente.
+        /// </remarks>
+        public new Proyecto_3_capas_ModasDelCentro.SiteMaster Master
+        {
+            get
+            {
+                return ((Proyecto_3_capas_ModasDelCentro.SiteMaster)(base.Master));
+            }
+        }
     }
 }

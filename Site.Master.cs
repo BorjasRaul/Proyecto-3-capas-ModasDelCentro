@@ -11,7 +11,30 @@ namespace Proyecto_3_capas_ModasDelCentro
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["Usuario"] != null)
+            {
 
+                UsuarioMaster.InnerText = Session["Usuario"].ToString();
+                IniciarSesion.Visible = false;
+
+            }
+            else { 
+            
+                IniciarSesion.Visible=true;
+                CerrarSesion.Visible = false;
+            }
+           
+          
+        }
+
+        protected void CerrarSesion_ServerClick(object sender, EventArgs e)
+        {
+            Session["Usuario"] = null;
+            Session["Rol"] = null;
+            CerrarSesion.Visible = false;
+            IniciarSesion.Visible = true;
+            Response.Redirect("~/");
         }
     }
+
 }
